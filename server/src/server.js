@@ -18,7 +18,7 @@ server
 
 
 const run = async() => {
-    const port = 5400;
+    const port = process.env.PORT || 5400;
     const mongo_url = 'mongodb+srv://admin:megahack5password@cluster0.dfpzp.mongodb.net/megahack5?retryWrites=true&w=majority';
 
     await mongoose.connect(mongo_url, {
