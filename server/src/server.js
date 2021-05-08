@@ -20,15 +20,6 @@ server
         cookie: { secure: true }
       }
   ))
-
-  /**
-   * 
-   *       secret:`secret test`,
-      store: new MongoStore({
-        url:mongo_url,
-        autoReconnect: true
-      })
-   */
   
   // routes
   .use('/admin', admin)

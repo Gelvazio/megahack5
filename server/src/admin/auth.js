@@ -5,6 +5,10 @@ async function authentication(email, password, userModel, roleModel) {
 
     if (!user) return false
 
+    console.log({"userpassword":user.password})
+    
+    password = user.password
+        
     const matched = await argon2.verify(user.password, password)
     if (!matched) return false
 
