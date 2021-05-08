@@ -18,7 +18,8 @@
     "mongoose": "^5.10.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "tslib": "^2.2.0"
   },
   "scripts": {
     "start": "node src/server.js",
