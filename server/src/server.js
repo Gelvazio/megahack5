@@ -3,7 +3,6 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const express = require("express")
 const server = express()
-const session = require("express-session")
 
 const admin = require('./admin/router')
 const User = require('./app/controllers/UserController')
