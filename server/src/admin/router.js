@@ -17,8 +17,8 @@ const options = {
     cookieName: 'admin-bro',
     cookiePassword: "fOcUs",
     authenticate, 
-    resave:false,
-    saveUninitialized: true,
+   // resave:true,
+    //saveUninitialized: true,
     store: new MongoStore({
         mongooseConnection: mongoose.connection
     }),

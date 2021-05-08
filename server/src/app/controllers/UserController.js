@@ -8,6 +8,7 @@ module.exports = {
 
     res.send(users);
   },
+  
   async getOne(req, res) {
     const id = req.params.id
 

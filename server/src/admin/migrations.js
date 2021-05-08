@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 require("dotenv").config({ path: 'env' });
+
 const argon2 = require("argon2");
 const mongoose = require("mongoose");
 
@@ -11,8 +12,8 @@ init();
 async function init() {
   console.log("Initing migrations");
 
-  let mongo_url = 'mongodb+srv://admin:megahack5password@cluster0.dfpzp.mongodb.net/megahack5?retryWrites=true&w=majority';
-
+  const mongo_url = 'mongodb+srv://admin:megahack5password@cluster0.dfpzp.mongodb.net/megahack5?retryWrites=true&w=majority';
+  
   await mongoose.connect(mongo_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -40,6 +41,7 @@ async function init() {
   }).save();
 
   await mongoose.disconnect();
+
   console.log();
   console.log("\x1b[42m\x1b[37m", "Migration finished\x1b[0m");
   console.log("User: \x1b[4madmin@admin.com\x1b[0m");

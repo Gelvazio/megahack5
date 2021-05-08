@@ -15,3 +15,8 @@ yarn start
 
 Usuario:admin@admin.com
 Senha:admin
+
+
+    router.use(express_session_1.default(Object.assign(Object.assign({}, sessionOptions), 
+    { resave: true, saveUninitialized: true, secret: auth.cookiePassword, name: auth.cookieName || "adminbro" })));
+    

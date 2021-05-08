@@ -55,7 +55,6 @@ const features = [
     }),
 ]
 
-
 async function transformPassword(request) {
     if (request.payload.plainTextPassword) {
         request.payload = {
